@@ -10,7 +10,7 @@ const ArchiveController = require("./controllers/ArchiveController");
 const routes = Router();
 const upload = multer(multerConfig);
 
-routes.get("/", (req, res) => res.json({ message: "hello world" }));
+routes.get("/stats", (req, res) => res.json({ message: "app is running" }));
 
 routes.get("/vault", VaultController.index);
 routes.get("/vault/:vaultName", VaultController.show);
