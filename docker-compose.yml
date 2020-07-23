@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  node-glacier:
+    image: node-glacier:v1
+    build: ./app
+    environment:
+      NODE_ENV: production
+      env_file: .env.prod
+    ports:
+      - 3000
