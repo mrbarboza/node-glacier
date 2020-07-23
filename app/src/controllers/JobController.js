@@ -10,8 +10,7 @@ const show = (req, res) => {
     jobParameters: {
       Type: "select",
       ArchiveId: archiveId,
-      // TODO: How much cost to use Tier: Expedited
-      // Tier: 'Expedited',
+      Tier: "Expedited",
       SelectParameters: {
         InputSerialization: {
           csv: {
