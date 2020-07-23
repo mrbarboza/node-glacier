@@ -6,6 +6,5 @@ services:
     build: ./app
     environment:
       NODE_ENV: production
-      env_file: .env.prod
     ports:
       - 3000
