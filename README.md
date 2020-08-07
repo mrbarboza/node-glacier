@@ -10,7 +10,7 @@ Clone or Fork this repository
 
 ```sh
 cd app
-npm istall
+npm install
 ```
 
 With all the dependencies installed, you must create a .env file with:
