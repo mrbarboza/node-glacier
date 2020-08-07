@@ -17,9 +17,9 @@ routes.get("/vault/:vaultName", VaultController.show);
 routes.post("/vault/:vaultName", VaultController.store);
 routes.delete("/vault/:vaultName", VaultController.destroy);
 
-routes.get("/archive/:vaultName/:archiveId", JobController.show);
+routes.post("/archive/:vaultName/:archiveId", JobController.store);
 routes.post(
-  "/archive/:vaultName",
+  "/archive/:vaultName/upload",
   upload.single("archive"),
   ArchiveController.store
 );

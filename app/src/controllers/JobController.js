@@ -3,7 +3,7 @@ const { Glacier } = require("aws-sdk");
 
 require("../config");
 
-const show = (req, res) => {
+const store = (req, res) => {
   const { vaultName, archiveId } = req.params;
 
   const jobParameter = {
@@ -45,5 +45,5 @@ const show = (req, res) => {
 };
 
 module.exports = {
-  show,
+  store,
 };
